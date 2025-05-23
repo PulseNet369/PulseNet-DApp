@@ -1,0 +1,129 @@
+:root {
+  /* CSS variable placeholders */
+  --primary-color: #4f46e5;
+  --secondary-color: #f59e42;
+  --background-color: #f9fafb;
+  --text-color: #22223b;
+  --header-bg: #fff;
+  --footer-bg: #f3f4f6;
+  --card-bg: #fff;
+  --border-radius: 1rem;
+  --box-shadow: 0 2px 8px rgba(79, 70, 229, 0.08);
+  --input-bg: #f3f4f6;
+  --input-border: #e5e7eb;
+  --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.header-top {
+  background: var(--header-bg);
+  box-shadow: var(--box-shadow);
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.header-top h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.header-top i {
+  color: var(--secondary-color);
+  font-size: 2.2rem;
+}
+
+.token-selector {
+  background: var(--input-bg);
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.token-selector select {
+  border: 1px solid var(--input-border);
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 1rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border var(--transition);
+}
+
+.token-selector select:focus {
+  border-color: var(--primary-color);
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: box-shadow var(--transition);
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.12);
+}
+
+input, button, select {
+  font-family: inherit;
+}
+
+button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition), box-shadow var(--transition);
+  box-shadow: 0 1px 4px rgba(79, 70, 229, 0.08);
+}
+
+button:hover, button:focus {
+  background: var(--secondary-color);
+  color: var(--text-color);
+}
+
+footer {
+  background: var(--footer-bg);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1.5rem 0;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  box-shadow: var(--box-shadow);
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.2rem 1rem 1rem 1rem;
+  }
+  .header-top h1 {
+    font-size: 1.3rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+}
