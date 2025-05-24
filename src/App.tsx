@@ -74,7 +74,7 @@ function App() {
 
   return (
     <div className="container">
-      <Header />
+      <Header selected={selectedToken} onTokenChange={setSelectedToken} />
       <NetworkInfo account={account} onConnect={connectWallet} />
       <AccountOverview
         plsBalance={plsBalance}

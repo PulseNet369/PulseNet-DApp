@@ -6,10 +6,14 @@ export default defineConfig({
   base: '/PulseNet-DApp/',
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
+    sourcemap: true,
+    emptyOutDir: true,
     rollupOptions: {
       output: {
-        manualChunks: undefined
+        manualChunks: undefined,
+        assetFileNames: 'assets/[name].[hash].[ext]',
+        chunkFileNames: 'assets/[name].[hash].js',
+        entryFileNames: 'assets/[name].[hash].js',
       }
     }
   },
@@ -17,9 +21,5 @@ export default defineConfig({
     alias: {
       '@': '/src'
     }
-  },
-  server: {
-    port: 5173,
-    strictPort: true
   }
 });
