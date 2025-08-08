@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/PulseNet-dApp/static/css/main.ca57846c.css",
+    "main.js": "/PulseNet-dApp/static/js/main.a6dff605.js",
+    "index.html": "/PulseNet-dApp/index.html",
+    "main.ca57846c.css.map": "/PulseNet-dApp/static/css/main.ca57846c.css.map",
+    "main.a6dff605.js.map": "/PulseNet-dApp/static/js/main.a6dff605.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca57846c.css",
+    "static/js/main.a6dff605.js"
+  ]
+}
