@@ -1,14 +1,90 @@
-.App {
-  text-align: center;
+.container {
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #f7f7f7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.badge {
+  background: #3498db;
   color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+}
+
+.info-row {
+  margin-bottom: 1rem;
+}
+
+.info-label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.info-value {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.select-container {
+  max-width: 300px;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.token-select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.token-select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.token-select option {
+  padding: 0.5rem;
 }
